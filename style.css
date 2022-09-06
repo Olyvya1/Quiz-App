@@ -114,6 +114,12 @@ body{
     pointer-events: none;
     transform: translate(-50%, -50) scale(.9);
 }
+.quiz_box.activeQuiz{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50) scale(1);
+}
 .quiz_box header{
     position: relative;
     z-index: 99;
