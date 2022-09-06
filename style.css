@@ -3,13 +3,15 @@
 *{
     padding: 0;
     margin: 0; 
-    border: none;   
-
     box-sizing: border-box;
     font-family: 'Poppins', "sans-serif";
 }
 body{
     background: rgb(235, 20, 56);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 .start_btn, .info_box, .quiz_box, .result_box{
     position: absolute;
@@ -18,12 +20,19 @@ body{
     transform: translate(-50%, -50%);
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
                  0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+ }
+.info_box.activeInfo{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1); 
 }
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
     color: rgb(235, 20, 56);
-    padding: 15px 30px;
+    padding: 10px 20px;
     outline: none;
     border: none;
     border-radius: 5px;
@@ -53,7 +62,7 @@ body{
 }
 .info_box .info_list .info{
     margin: 5px 0;
-    font: 17px;
+    font-size: 17px;
 }
 .info_box .info_list .info_span{
     font-weight: 600;
@@ -71,6 +80,7 @@ body{
     margin: 0 5px;
     height: 40px;
     width: 100px;
+    outline: none;
     border: 1px solid rgb(235, 20, 56);
     border-radius: 5px;
     color: whitesmoke;
@@ -96,7 +106,6 @@ body{
     background: rgb(25, 25, 209);
 }
 .quiz_box{
-    display: none; 
     width: 550px;
     min-height: 60%;
     background: whitesmoke;
@@ -146,6 +155,13 @@ body{
     border-radius: 5px;
     border: 1px solid rgb(10, 25, 73);
     user-select: none;
+}
+.quiz-box header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: rgb(85, 85, 247);
 }
 .quiz_box section{
     padding: 25px 30px 20px 30px;
@@ -246,9 +262,14 @@ footer .next_btn:hover{
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    /*opacity: 0;
+    opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%) scale(0.9);*/
+    transform: translate(-50%, -50%) scale(0.9);
+}
+.result-box.activeresult_box{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50) scale(1);
 }
 .result_box .icon{
     font-size: 100px;
