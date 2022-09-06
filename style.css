@@ -165,7 +165,7 @@ body{
     border: 1px solid rgb(10, 25, 73);
     user-select: none;
 }
-.quiz-box header .time_line{
+.quiz_box header .time_line{
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -275,7 +275,7 @@ footer .next_btn:hover{
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
 }
-.result-box.activeresult_box{
+.result_box.activeresult_box{
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50) scale(1);
