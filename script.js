@@ -209,8 +209,8 @@ let userScore = 0;
 
  const next_btn = document.querySelector(".next_btn")
  const result_box = document.querySelector(".result_box")
- const restart_quiz = document.querySelector(".buttons .restart")
- const quit_quiz = document.querySelector(".buttons .quit")
+ const restart_quiz = document.querySelector(".butttons .restart")
+ const quit_quiz = document.querySelector(".butttons .quit")
 
 
  restart_quiz.onclick = ()=>{

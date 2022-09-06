@@ -299,11 +299,11 @@ footer .next_btn:hover{
     font-weight: 600;
     padding: 0 4px;
 }
-.result_box .buttons{
+.result_box .butttons{
     display: flex;
     margin: 20px 0;
 }
-.result_box .buttons button{
+.result_box .butttons button{
     margin: 0 10px;
     height: 45px;
     padding: 0 20px;
@@ -315,4 +315,55 @@ footer .next_btn:hover{
     border: 1px solid rgb(235, 20, 56);
     cursor: pointer;
     transition: all 0.3s ease;
+}
+.butttons button.restart{
+    color: whitesmoke;
+    background: rgb(235, 20, 56);
+}
+.butttons button.restart:hover{
+    background: rgb(25, 25, 209);
+}
+.butttons button.quit{
+    color: whitesmoke;
+    background: rgb(235, 20, 56);
+
+}
+.butttons button.quit:hover{
+    color: whitesmoke;
+    background: rgb(25, 25, 209);
+}
+
+
+
+@media screen and (max-width: 415px) {
+    body{
+        height: 100vh;
+
+    }
+    .quiz_box, .info_box, .result_box {
+        pointer-events: none;
+        width: 400px;
+        background: whitesmoke;
+        border-radius: 5px;
+    
+    }
+    
+.info_box .info_title{
+    font-size: 15px;
+}
+.info_box .info_list .info{
+    font-size: 18px;
+}
+.quiz_box header .title{
+    font-size: 18px;
+}
+.quiz_box header .timer{
+    font-size: 15px;
+}
+.quiz_box header .timer .timer_sec{
+    font-size: 16px;
+}
+.quiz_box section .que_txt{
+    font-size: 22px;
+}
 }
